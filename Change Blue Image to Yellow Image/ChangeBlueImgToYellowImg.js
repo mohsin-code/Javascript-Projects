@@ -1,4 +1,4 @@
-var image = new SimpleImage("duke_blue_devil.png");
+var image = new SimpleImage("duke_blue_devil.png");     //The image in the current directory
 print(image);
 
 print("\n\nThe above picture is converted into: ")
