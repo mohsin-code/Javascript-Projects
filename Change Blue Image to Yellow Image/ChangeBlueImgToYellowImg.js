@@ -1,5 +1,5 @@
 var image = new SimpleImage("duke_blue_devil.png");     //The image in the current directory
-print(image);
+write(image);
 
 print("\n\nThe above picture is converted into: ")
 
@@ -11,4 +11,4 @@ for (var pixel of image.values()) {    //Each blue pixel is converted into yello
     }
 }
 
-print(image);
+document.write(image);
