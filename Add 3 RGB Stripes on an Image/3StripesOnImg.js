@@ -1,5 +1,5 @@
 var image = new SimpleImage("android.jpeg");
-print(image);
+document.write(image);
 
 for(var pixel of image.values()){
     if(pixel.getX()<(image.getWidth()/3)){
@@ -11,4 +11,5 @@ for(var pixel of image.values()){
     }
 }
 
-print(image);
+document.write(image);
+
