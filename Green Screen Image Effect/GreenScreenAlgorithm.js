@@ -6,7 +6,7 @@ var background = new SimpleImage("dinos.png");
 background.setSize(image.getWidth(), image.getHeight());
 
 print(image);
-print(background);
+document.write(background);
 
 //Adds border on an image
 function greenScreen(image, back){
