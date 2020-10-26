@@ -18,5 +18,5 @@ function greenScreen(image, back){
     return print(image);
 }
 
-print("After the Green Screen Effect, The Image look like: ");
+document.write("After the Green Screen Effect, The Image look like: ");
 greenScreen(image, background);
