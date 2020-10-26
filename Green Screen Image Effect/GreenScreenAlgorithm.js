@@ -3,9 +3,9 @@
 var image = new SimpleImage("drewRobert.png");
 var background = new SimpleImage("dinos.png");
 
-background.setSize(image.getWidth(), image.getHeight());
+background.setSize(image.getWidth(), image.getHeight());  //background and image size equals
 
-print(image);
+document.write(image);
 document.write(background);
 
 //Adds border on an image
