@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Canvas Input and Events</title>
+    <link rel="stylesheet" href="InputAndEvents.css">
+  </head>
+  <body>
+    <h1>Input and Events</h1>
+    <canvas id="cv"></canvas>
+    <br>
+    <input id="btn" type="button" value="Default" onclick="doBlue()">
+    <input id="clr" type="color" value="#0000FF" onchange="changeColor()">
+    <br>
+    <input id="sld" type="range" min=0 max=100 value=0 oninput="doSquare()">
+    <script src="InputAndEvents.js"></script>
+  </body>
+</html>
