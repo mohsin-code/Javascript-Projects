@@ -1,0 +1,58 @@
+body {
+  text-align: center;
+  background-color: lightgreen;
+  margin: 0;
+}
+
+h1 {
+  margin: auto;
+  padding: 9px;
+  background: lightgrey;
+  color: green;
+  font-family: jokerman;;
+}
+
+div {
+  margin: auto;
+  padding: 15px;
+  font-size: 17px;
+  font-family: showcard gothic;
+}
+
+#about {
+  border: 5px solid green;
+  width: 28%;
+  margin-top: 20px;
+  background-color: maroon;
+  color: yellow;
+}
+
+#get {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 5px;
+  color: darkblue;
+  font-family: chiller;
+}
+
+#btn {
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: 2px groove green;
+  background-color: yellow;
+  color: darkgreen;
+  font-size: 15px;
+  font-family: impact;
+  cursor: pointer;
+}
+
+#btn2 {
+  margin: 10px 0;
+  padding: 7px 10px;
+  border: 2px groove blue;
+  background-color: lightpink;
+  color: darkblue;
+  font-size: 15px;
+  font-family: impact;
+  cursor: pointer;
+}
