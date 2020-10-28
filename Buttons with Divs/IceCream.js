@@ -2,8 +2,8 @@ function getIceCream(){
   alert('Here is your Ice Cream 🍦 Sorry we only have Vanilla 😅');
 }
 
-function topping(choice){
-  confirm('Do you want toppings?');
+function topping(){
+  var choice = confirm('Do you want toppings?');
   if(choice == "OK"){
     var message = "Here is your topping 🍨"
   } else {
