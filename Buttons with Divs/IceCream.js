@@ -4,7 +4,7 @@ function getIceCream(){
 
 function topping(){
   var choice = confirm('Do you want toppings?');
-  if(choice == "OK"){
+  if(choice){
     var message = "Here is your topping 🍨";
   } else {
     var message = "You sure?";
