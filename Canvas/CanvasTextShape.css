@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+  background-color: lightgreen;
+  margin: 0;
+}
+
+h1 {
+  margin: auto;
+  padding: 9px;
+  background: lightgrey;
+  color: green;
+  font-family: jokerman;;
+}
+
+canvas {
+  width = 200pt;
+  height = 100pt;
+}
+
+#about {
+  border: 5px solid green;
+  margin: 20px;
+  background-color: maroon;
+}
+
+#get {
+  border: 5px solid blue;
+  margin: 20px;
+  background-color: cyan;
+}
+
+#btn {
+  margin: 10px 5px;
+  padding: 7px 10px;
+  border: 2px groove green;
+  background-color: yellow;
+  color: darkgreen;
+  font-size: 15px;
+  font-family: impact;
+  cursor: pointer;
+}
+
+#btn2 {
+  margin: 10px 5px;
+  padding: 7px 10px;
+  border: 2px groove blue;
+  background-color: lightpink;
+  color: darkblue;
+  font-size: 15px;
+  font-family: impact;
+  cursor: pointer;
+}
