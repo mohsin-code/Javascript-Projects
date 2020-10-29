@@ -8,7 +8,7 @@ background.setSize(image.getWidth(), image.getHeight());  //background and image
 document.write(image);
 document.write(background);
 
-//Adds border on an image
+//Green Screen Algorithm
 function greenScreen(image, back){
     for(var pixel of image.values()){
         if(pixel.getGreen() > (pixel.getRed() + pixel.getBlue())){
