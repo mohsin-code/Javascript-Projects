@@ -12,8 +12,8 @@ h1 {
 }
 
 #cv {
-  width = 200pt;
-  height = 100pt;
+  width : 200pt;
+  height : 100pt;
   border: 3px solid grey;
   background-color: green;
 }
