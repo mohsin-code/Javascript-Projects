@@ -1,0 +1,40 @@
+/* Please change these styles to new one */
+
+body {
+    text-align: center;
+    margin: 0;
+  }
+  
+  h1 {
+    margin: 20px auto;
+    padding: 9px;
+    font-family: Cambria;
+  }
+  
+  canvas {
+    width: 600px;
+    height: 600px;
+    border: 3px solid;
+    margin: 25px 30px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: cursive;
+  }
+  
+  #btn {
+    margin: 15px 8px;
+    padding: 2px 8px;
+    border: 2px solid;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: Calibri;
+  }
+  
+  #fore, #back {
+    font-size: 15px;
+    margin: 10px;
+  }
