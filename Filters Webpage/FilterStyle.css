@@ -1,0 +1,33 @@
+body {
+    background-color: lightgreen;
+    color: indigo;
+    font-family: Cambria;
+    text-align: center;
+}
+  
+canvas {
+    border: solid black;
+    height: 500px;
+    width: 800px;
+    margin: 20px;
+}
+  
+button, input{
+    padding: 5px 20px;
+    margin: 10px;
+    font-family: Calibri;
+    font-size: 16px;
+}
+  
+button {
+    background-color: #92429f;
+    border: double #fca503;
+    color: #ffff0f;
+    font-weight: bold;
+}
+  
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: magenta;
+}
