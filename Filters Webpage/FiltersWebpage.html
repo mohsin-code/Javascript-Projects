@@ -1,0 +1,17 @@
+<html>
+<head><link rel="stylesheet" href="FilterStyle.css"></head>
+<body>
+    <h1>Filters Webpage</h1>
+    <h3>Add a filter to your Photo</h3>
+    <canvas id="canvas"></canvas>
+    <br>
+    <input type="file" id="file" accept="images/*" onchange="loadImage()">
+    <br>
+    <button id="gray" onclick="greyScale()">Grayscale</button>
+    <button onclick="redify()">Redify</button>
+    <button id="rainbow" onclick="sepia()">Sepia</button>
+    <br>
+    <button id="clear" onclick="clearCanvas()">Clear all</button>
+    <script src='https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js'></script> 
+</body>
+</html>
