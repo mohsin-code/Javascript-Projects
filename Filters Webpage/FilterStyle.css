@@ -1,5 +1,6 @@
 body {
-    background-color: lightgreen;
+    background-image: url(smoothDBlueBg.jpg);
+    background-size: contain;
     color: indigo;
     font-family: Cambria;
     text-align: center;
