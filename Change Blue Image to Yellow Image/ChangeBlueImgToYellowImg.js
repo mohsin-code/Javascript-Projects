@@ -1,7 +1,9 @@
+var canvas = document.getElementById("canvas");
+
 function Upload(){
     var file = document.getElementById("imgInput");
     var image = new SimpleImage(file);     //The image in the current directory
-    image.drawTo("canvas");
+    image.drawTo(canvas);
 }
 
 function makeBlue(){
@@ -13,5 +15,5 @@ function makeBlue(){
         }
     }
 
-    image.drawTo("canvas");
+    image.drawTo(canvas);
 }
