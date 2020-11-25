@@ -1,16 +1,17 @@
 var canvas = document.getElementById("canvas");
+var image = 0;
 
 function Upload(){
     var file = document.getElementById("imgInput");
-    var image = new SimpleImage(file);     //The image in the current directory
+    image = new SimpleImage(file);     //The image in the current directory
     image.drawTo(canvas);
 }
 
-function makeBlue(){
+function makeYellow(){
     for (var pixel of image.values()) {    //Each blue pixel is converted into yellow
-        if (pixel.getGreen() < 225 && pixel.getRed() < 225) {
-            pixel.setRed(255);
-            pixel.setGreen(255);
+        if (pixel.getBlue() > (pixel.getGreen() + pixel.getRed())) {
+            pixel.setRed(pixel.getBlue());
+            pixel.setGreen(pixel.getBlue());
             pixel.setBlue(0);
         }
     }
