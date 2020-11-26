@@ -1,28 +1,29 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    color: cornflowerblue;
+    color: black;
 }
 
 body {
-    background-color: cornflowerblue;
+    background-image: url(https://img.freepik.com/free-vector/vintage-ornamental-flowers-background_52683-28040.jpg?size=626&ext=jpg);
 }
 
 .box {
     height: 50%;
     width: 50%;
-    background-color: crimson;
+    background: transparent;
     margin: auto;
     margin-top: 100px;
     padding: 50px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button {
-    background-color: cornflowerblue;
-    color: crimson;
-    margin: 10px;
+    background-color: rgb(230, 161, 230);
+    color: rgb(4, 56, 56);
+    margin: 0 10px;
     padding: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
 }
 
@@ -33,9 +34,11 @@ button:hover {
 }
 
 h1 {
-    padding: 10px;
+    padding: 2px;
 }
 
 .num {
-    color: cyan;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 72px;
+    color: gray;
 }
