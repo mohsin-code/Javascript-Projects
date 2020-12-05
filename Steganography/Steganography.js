@@ -5,27 +5,35 @@ function UploadHidden()
 {
     var input = document.getElementById("hide");
     hide = new SimpleImage(input);
-    canvas = document.getElementById("cv1")
+    canvas_1 = document.getElementById("cv1")
     
-    hide.drawTo(canvas);
+    hide.drawTo(canvas_1);
 
-    //get latter pixels of this
+    hide = HidePixs(hide);
 }
 
 function UploadImg()
 {
     var input = document.getElementById("img");
     img = new SimpleImage(input);
-    canvas = document.getElementById("cv2")
+    canvas_2 = document.getElementById("cv2")
     
-    img.drawTo(canvas);
+    img.drawTo(canvas_2);
 
-    //get header of this
+    img = ChopToHide(img);
 }
 
 function HideImg()
 {
-    //Perform steganography
+    ClearCanvas();
+    
+    for (var pixel of img) {
+        pixel.setBlue(pixel.getBlue() + hide.getPixel(pixel.getX(), pixel.getY()).getBlue());
+        pixel.setRed(pixel.getRed() + hide.getPixel(pixel.getX(), pixel.getY()).getRed());
+        pixel.setGreen(pixel.getGreen() + hide.getPixel(pixel.getX(), pixel.getY()).getGreen());
+    }
+
+    img.drawTo(canvas_1)
 }
 
 function ClearCanvas()
@@ -41,4 +49,28 @@ function ClearCanvas()
 
     img = null;
     hide = null;
+}
+
+function HidePixs(image)
+{
+    for (var pixel of image.values()) 
+    {
+        pixel.setRed(Math.floor(pixel.getRed() / 16) * 16);
+        pixel.setBlue(Math.floor(pixel.getBlue() / 16) * 16);
+        pixel.setGreen(Math.floor(pixel.getGreen() / 16) * 16);
+    }
+
+    return image;
+}
+
+function ChopToHide(image)
+{
+    for (var pixel of image.values()) 
+    {
+        pixel.setRed((pixel.getRed() % 16) * 16);
+        pixel.setBlue((pixel.getBlue() % 16) * 16);
+        pixel.setGreen((pixel.getGreen() % 16) * 16);
+    }
+
+    return image;
 }
