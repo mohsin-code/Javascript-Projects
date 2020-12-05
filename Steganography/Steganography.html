@@ -1,11 +1,24 @@
 <html>
 <head>
+    <meta http-equiv="refresh" content="10">
     <title>Steganography</title>
     <link rel="stylesheet" href="Steganography.css">
 </head>
 <body>
     <h1>Steganography</h1>
-    <canvas class="cv1"></canvas>
-    <canvas class="cv2"></canvas>
+    <div class="row">
+        <div class="column">
+            <canvas class="cv1"></canvas>
+            <input id="hide" type="file" accept="images/*" onchange="UploadHidden()">
+        </div>
+        <div class="column">
+            <canvas class="cv2"></canvas>
+            <input id="img" type="file" accept="images/*" onchange="UploadImg()">
+        </div>
+        <button id="hide-img" onclick="HideImg()">Hide Image</button>
+        <button id="clc" onclick="ClearCanvas()">Hide Image</button>
+        <script src="Steganography.js"></script>
+        <script src='https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js'></script>
+    </div>
 </body>
 </html>
